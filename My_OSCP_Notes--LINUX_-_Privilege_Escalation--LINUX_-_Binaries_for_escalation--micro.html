@@ -1,0 +1,1094 @@
+<!doctype html><html>
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>micro</title>
+  <meta name="generator" content="CherryTree">
+  <link rel="stylesheet" href="styles.css" type="text/css" />
+</head>
+<body><div class="main"><div class="tree">
+<p><strong>Index</strong></p>
+<p><a href="My_OSCP_Notes.html">My OSCP Notes</a></p>
+
+<ol>
+<li><a href="My_OSCP_Notes--Scanning.html">Scanning</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Port_Knock.html">Port Knock</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap.html">Nmap</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way.html">My way</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--TCP.html">TCP</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--TCP--Step1-Live_host.html">Step1-Live host</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--TCP--Step2-nmap_Full_port_scan.html">Step2-nmap Full port scan</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--TCP--Step3-Run_nmap_Full_port_scan.html">Step3-Run nmap Full port scan</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--TCP--Step4-nmap_Open_port_scan.html">Step4-nmap Open port scan</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--TCP--Step5-Run_Open_port_scan.html">Step5-Run Open port scan</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--UDP.html">UDP</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--UDP--Step2-nmap_Full_port_scan.html">Step2-nmap Full port scan</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--UDP--Step3-Run_nmap_Full_port_scan.html">Step3-Run nmap Full port scan</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--UDP--Step4-nmap_Open_port_scan.html">Step4-nmap Open port scan</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--UDP--Step5-Run_Open_port_scan.html">Step5-Run Open port scan</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--FinalScanPart1.html">FinalScanPart1</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Nmap--My_way--FinalScanPart2.html">FinalScanPart2</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--Scanning--Recon.html">Recon</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Recon--network.html">network</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Recon--web.html">web</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scanning--Recon--web--gobuster.html">gobuster</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Recon--web--wfuzz.html">wfuzz</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Recon--web--webdav.html">webdav</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Recon--web--jenkin.html">jenkin</a></li>
+<li><a href="My_OSCP_Notes--Scanning--Recon--web--windowexploitsuggester.html">windowexploitsuggester</a></li>
+</ol>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration.html">Enumeration</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services.html">Ports & Services</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--SMB.html">SMB</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--ssh.html">ssh</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--ssh--22.html">22</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--dns.html">dns</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--mssql.html">mssql</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--snmp.html">snmp</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--snmp--161.html">161</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--139_&445.html">139 &445</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--oracle_1521-1560.html">oracle 1521/1560</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--port_110_POP3.html">port 110 POP3</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--79_finger.html">79 finger</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--ftp_21.html">ftp 21</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--udp.html">udp</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--25_smtp.html">25 smtp</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--111.html">111</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--135_msrpc.html">135 msrpc</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--1433.html">1433</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--1521.html">1521</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--2049_nfs.html">2049 nfs</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--3306.html">3306 </a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--3389_-rdp.html">3389 -rdp</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Ports_&_Services--5900_-_vnc.html">5900 - vnc</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP.html">HTTP</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Gobuster.html">Gobuster</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Wordpress_scan.html">Wordpress scan</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Wordpress_scan--XML_RPC.html">XML RPC</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Wordpress_scan--passwords.html">passwords</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Wordpress_scan--Code_Injection.html">Code Injection</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Wordpress_scan--Wordpress_Plugin_Reverse_Shell_Upload.html">Wordpress Plugin Reverse Shell Upload</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Nikto.html">Nikto</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--dirsearch.html">dirsearch</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Fuzzing_for_web.html">Fuzzing for web</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--WFuzz.html">WFuzz</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--WFuzz--wfuzz_username.html">wfuzz username</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Command_Injection.html">Command Injection</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--XAMPP.html">XAMPP</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI.html">LFI RFI</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_-proc-self-environ_&_fd.html">RCE via /proc/self/environ & fd</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_Upload_file.html">RCE via Upload file</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_phpinfo().html">RCE via phpinfo()</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_a_controlled_log_file.html">RCE via a controlled log file</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_SSH_(LOG_posioning).html">RCE via SSH (LOG posioning)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_Mail_SMTP_25.html">RCE via Mail SMTP 25</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_PHP_sessions.html">RCE via PHP sessions</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_-etc-shadow_or_Credentials.html">RCE via /etc/shadow or Credentials</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--RCE_via_PHP_Wrapper.html">RCE via PHP Wrapper</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--Remote_code_execution.html">Remote code execution</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--LFI_RFI--free_bsd_OS.html">free bsd OS</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Login_Bypass.html">Login Bypass</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Droopal_Scan.html">Droopal Scan</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--SSRF.html">SSRF</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--Hydra_post_form.html">Hydra post form</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--HTTP--cewl.html">cewl</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--FTP-21.html">FTP-21</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--FTP-21--Download_file_from_ftp.html">Download file from ftp</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--FTP-21--Autobind_ftp_when_ftp_is_permission_denied_for_local_user.html">Autobind ftp when ftp is permission denied for local user</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--FTP-21--Remeber_while_uploading_file_on_ftp.html">Remeber while uploading file on ftp</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--SSH.html">SSH</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--SSH_Port_Forwarding-Banned_IPPSEC.html">SSH Port Forwarding/Banned IPPSEC</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--SSH_Tunneling_-_Pivoting.html">SSH Tunneling / Pivoting</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--enum_ssh.html">enum_ssh</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--rbash_shell_esacping.html">rbash shell esacping</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--Login_with_RSA.html">Login with RSA</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--Decrypt_RSA.html">Decrypt RSA</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--deffie_helmen_error.html">deffie helmen error</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--When_bruteforcing_hydra_don't_work.html">When bruteforcing hydra don't work</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--lshell_bypass.html">lshell bypass</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--different_shell_and_their_errors.html">different shell and their errors</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SSH--port_kncoking.html">port kncoking</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service.html">DNS and R service</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--Dns_Zone_Checker.sh.html">Dns_Zone_Checker.sh</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--Subdomain_bruteforce.sh.html">Subdomain_bruteforce.sh</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--nslookup.html">nslookup</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--dig.html">dig</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--dnsrecon.html">dnsrecon</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--host.html">host</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DNS_and_R_service--R_service.html">R service</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--SMB.html">SMB</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--SMB--mount_SMB_share_to_aa_local_folder.html">mount SMB share to aa local folder</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMB--smb_3.0.20_exploit.html">smb 3.0.20 exploit</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMB--smbmap&_smb_share_permissions.html">smbmap& smb share permissions</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMB--smbclient_&_share_comments.html">smbclient & share comments</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMB--Check_smb_version.html">Check smb version</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--SNMP.html">SNMP</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--SNMP--snmpwalk.sh.html">snmpwalk.sh</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SNMP--snmp_enum.html">snmp_enum</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SNMP--onesixyone_scanning_for_ips.html">onesixyone scanning for ips</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SNMP--snmpwalk_to_find_installed_software,_TCP_Port,_Windows_version.html">snmpwalk to find installed software, TCP Port, Windows version</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--SMTP.html">SMTP</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--SMTP--smtp.rb.html">smtp.rb</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMTP--smtp_VRFY.py.html">smtp_VRFY.py</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMTP--command.html">command</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMTP--Postfix_SMTP_4.2.x__4.2.48.html">Postfix SMTP 4.2.x < 4.2.48</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--SMTP--checking_smtp_ips_in_a_network.html">checking smtp ips in a network</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL.html">MS SQL</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--Microsoft_sql_enum.html">Microsoft_sql_enum</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--Error_based_SQL.html">Error based SQL</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--boolean_based.html">boolean based</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--Time_based_SQLi.html">Time based SQLi</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--SQL_Injection_(SQL_MAP).html">SQL Injection (SQL MAP)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--Blind_sql.html">Blind sql</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--PHPADMIN_OS_Command_Injection(Reverse_shell).html">PHPADMIN OS Command Injection(Reverse shell)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--SQSH_Microsoft_1433.html">SQSH Microsoft 1433</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MS_SQL--getting_shell_with_error_based.html">getting shell with error based</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--Oracle.html">Oracle</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--Oracle--run_all_modules_to_find_SID.html">run all modules to find SID</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Oracle--Search_for_Creds_from_obtained_SID.html">Search for Creds from obtained SID</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Oracle--login_with_obtained_creds_and_connect_with_sqlplus.html">login with obtained creds and connect with sqlplus</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Oracle--account_has_system_database_priviledges_(sysdba)_or_system_operator_(sysop).html">account has system database priviledges (sysdba) or system operator (sysop)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Oracle--Execute_code_with_odat_once_creds_obtained.html">Execute code with odat once creds obtained</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--finger_enum_user.sh.html">finger_enum_user.sh</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--finger_enum_user.sh--Enum_Image.html">Enum Image</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--finger_enum_user.sh--fingerenum.html">fingerenum</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--Telnet.html">Telnet</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--NFS_RPC.html">NFS RPC</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Pop3.html">Pop3</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--512_513_514_rsh-client.html">512 513 514 rsh-client</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Unreal_IRCD_6667_6697.html">Unreal IRCD 6667 6697</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--NFS_-portmapper_(rpcinfo)_2249.html">NFS -portmapper (rpcinfo) 2249</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--DistCC_backdoor_3632.html">DistCC backdoor 3632</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Shell_Shock.html">Shell Shock</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Apache_2.4.18.html">Apache 2.4.18</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--lighttpd_1.4.35.html">lighttpd 1.4.35</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--pfsense_2.1.3_(Release_2014).html">pfsense 2.1.3 (Release 2014)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Apache_Tomcat.html">Apache Tomcat</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--squid_proxy.html">squid proxy</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--CMS.html">CMS</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Uncommon_Port_Exploitation_search-Enum.html">Uncommon Port Exploitation search/Enum</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--ASP_login_page_web.config_IIS_7.5.html">ASP login page web.config IIS 7.5</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Steg_extract.html">Steg extract</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--VNC_vncviewer.html">VNC vncviewer</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--RDP.html">RDP</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--James_4555.html">James 4555</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--MDB_tool.html">MDB tool</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Jenkins.html">Jenkins</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--phpLiteAdmin__=_1.93.html">phpLiteAdmin  <= 1.93</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Wordpress_gwolle-gb_Plugin_=1.5.3.html">Wordpress gwolle-gb Plugin <=1.5.3</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--tftp.html">tftp</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Windows_xp_viewing_stream_data.html">Windows xp viewing stream data</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Active_Directory_AD.html">Active Directory AD</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--XML_upload_(XXE_RCE)_JSON_data_Found.html">XML upload (XXE RCE) JSON data Found </a></li>
+<li><a href="My_OSCP_Notes--Enumeration--.cap_decrpt_with_aircrack-ng.html">.cap decrpt with aircrack-ng</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--bypass_WAF.html">bypass WAF</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--cPickle_usage_of_loads,_which_is_vulnerable_to_RCE.html">cPickle usage of loads, which is vulnerable to RCE</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Stratosphere_(Apache_Struts_.action_Discovered).html">Stratosphere (Apache Struts .action Discovered)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Node_Serealization(Cookie_base64_JSON_object_profile).html">Node Serealization(Cookie base64 JSON object profile)</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Image_covertor_RCE_image_upload.html">Image covertor RCE image upload</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--List_of_file_signature's.html">List of file signature's</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Generating_wordlist_with_cewl_using_web_url.html">Generating wordlist with cewl using web url</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Cron_Job_for_a_credential_file-grabbing_password_from_hash_can_saving_it_to_another_file.html">Cron Job for a credential file-grabbing password from hash can saving it to another file</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Cuppa_Remote_file_inclusion.html">Cuppa Remote file inclusion</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--Port_500_running_isakmp.html">Port 500: running isakmp</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS.html">OS</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux.html">linux </a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--commands.html">commands</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--tty.html">tty</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--basic_enumeration.html">basic enumeration</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--suid.html">suid</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--cron.html">cron</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--compilation.html">compilation</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--restricted_bash_shell.html">restricted bash shell</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--linux--grep.html">grep</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows.html">windows</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--basic_commands.html">basic commands</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--services.html">services</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--samba__version.html">samba  version</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--passthehash.html">passthehash</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--search.html">search</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--share_folder.html">share folder</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--version.html">version</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--davtest.html">davtest</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--impersonate.html">impersonate</a></li>
+<li><a href="My_OSCP_Notes--Enumeration--OS--windows--sqsh_enable.html">sqsh enable</a></li>
+</ol>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--Intrective_shell.html">Intrective shell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell.html">Pseudo shell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--Breaking_Jail.html">Breaking Jail</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--python.html">python</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--bash.html">bash</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--awk.html">awk</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--perl.html">perl</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--ruby.html">ruby</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--lua.html">lua</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--IRB.html">IRB</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--tcpdump.html">tcpdump</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--vi.html">vi</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Pseudo_shell--nmap.html">nmap</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Full_intractive_shell.html">Full intractive shell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Full_intractive_shell--socat.html">socat</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Full_intractive_shell--Magic_on_netcat.html">Magic on netcat</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell.html">Reverse shell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--bash.html">bash</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--python.html">python</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--perl.html">perl</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--ruby.html">ruby</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--Java.html">Java</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--Telnet.html">Telnet</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--netcat.html">netcat</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--PHP.html">PHP</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--Gawk.html">Gawk</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--PHP_reverese.php.html">PHP_reverese.php</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--URL_reverseshell.html">URL reverseshell</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--bypass_&__os_command_php.html">bypass &  os command php</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_shell--curl.html">curl</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Nishang_Reverse_Shell.html">Nishang_Reverse_Shell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Nishang_Reverse_Shell--Nishng_Invoke_Intractive_powershell.html">Nishng_Invoke_Intractive_powershell</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Nishang_Reverse_Shell--Nishang_is_alll_about_reverse_shaell.html">Nishang is alll about reverse shaell</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Reverse_Shell_with_Powercat.html">Reverse Shell with Powercat</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Webshell.html">Webshell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Intrective_shell--Webshell--aspx.html">aspx</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Webshell--asp.html">asp</a></li>
+<li><a href="My_OSCP_Notes--Intrective_shell--Webshell--jsp.html">jsp</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation.html">WINDOWS - Privilege Escalation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Sharup_Results.html">WINDOWS - Sharup Results</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Seatbelt_Results.html">WINDOWS - Seatbelt Results</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Kernel.html">WINDOWS - Kernel</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Services_(Binpath).html">WINDOWS - Services (Binpath)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-Services_(Unquoted_path).html">WINDOWS -Services (Unquoted path)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Services_(Registry).html">WINDOWS - Services (Registry)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Services_(Executable_file).html">WINDOWS - Services (Executable file)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Registry_(Autorun).html">WINDOWS - Registry (Autorun)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Registry(AlwaysInstallElevated.html">WINDOWS - Registry(AlwaysInstallElevated</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_PasswordMining_(Memory).html">WINDOWS - PasswordMining (Memory)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-Password_(Registry).html">WINDOWS -Password (Registry)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Password_(config_files).html">WINDOWS - Password (config files)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_HOT_potato.html">WINDOWS - HOT potato</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-Scheduled_task_(Missing_binary).html">WINDOWS -Scheduled task (Missing binary)</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-Startup_Application.html">WINDOWS -Startup Application</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Passthehash.html">WINDOWS - Passthehash</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Unquoted_Path_Service.html">WINDOWS - Unquoted Path Service</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Unquoted_Path_Service--adding_new_user.html">adding new user</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Unquoted_Path_Service--rdp_and_stickykeys.html">rdp and stickykeys </a></li>
+</ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_(AlwaysInstallElevated).html">WINDOWS - (AlwaysInstallElevated)</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_(AlwaysInstallElevated)--1st_method_-_msfvenom.html">1st method - msfvenom</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_(AlwaysInstallElevated)--2nd_method_-_administrator.html">2nd method - administrator</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_(AlwaysInstallElevated)--3rd_way_via_msf.html">3rd way via msf</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Automated_Script.html">WINDOWS - Automated Script</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Automated_Script--Windows-Exploit-suggester.html">Windows-Exploit-suggester</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Automated_Script--Windows_Gather_Applied_Patches.html">Windows Gather Applied Patches</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Automated_Script--Sherlock.html">Sherlock</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Automated_Script--JAWS_–_Just_Another_Windows_(Enum)_Script.html">JAWS – Just Another Windows (Enum) Script</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Automated_Script--powerup.html">powerup</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_JuicyPotato.html">WINDOWS - JuicyPotato</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--WINDOWS_-_Powershell_credentials.html">WINDOWS - Powershell credentials</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows).html">My Priv esc tech (Windows)</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--mimiketz_if_discover_protected_SID_files.html">mimiketz if discover protected SID files</a></li>
+<li><a href="_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Login_with_obtained_creds_with_psexec_and_powershell_&_smbclient.html">Login with obtained creds with psexec and powershell & smbclient</a></li>
+<li><a href="CP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Finding_permission_&_actual_file_path_of_shortcut_file_or_.lnk_file.html">Finding permission & actual file path of shortcut file or .lnk file</a></li>
+<li><a href="_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--icacls_&_cacls_for_find_file_&_folder_permissions_and_Edit_permission.html">icacls & cacls for find file & folder permissions and Edit permission</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Discovered_VM_on_target_loaction.html">Discovered VM on target loaction</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Discoverd_.mdb_backup.html">Discoverd .mdb backup</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Discovered_.kdbx_Keepass_database.html">Discovered .kdbx Keepass database</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--search_file_recursively.html">search file recursively</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--List_hidden_files.html">List hidden files</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Got_.dmp_file_extract_with_volatality.html">Got .dmp file extract with volatality</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--group.xml_file_with_enocded_password.html">group.xml file with enocded password</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Get_that_pass_out_of_the_ADS_backup.zip.html">Get that "pass" out of the ADS backup.zip</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--disable_firewall_enable_rdp.html">disable firewall enable rdp</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Finding_windows_version_from_a_file.html">Finding windows version from a file</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--got_SAM_System_file_use_pwdump_to_dump_hashes.html">got SAM System file use pwdump to dump hashes</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows.html">Windows</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--Ebowla_+_Token_Impersonation.html">Ebowla + Token Impersonation</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--PowerUp.ps1.html">PowerUp.ps1</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--Non_intractive_powershell_file_execution.html">Non intractive powershell file execution</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--add_user.html">add user</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--Convert_Ptython2exe.html">Convert Ptython2exe</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--Manual_Priv_Check.html">Manual Priv Check</a></li>
+<li><a href="My_OSCP_Notes--WINDOWS_-_Privilege_Escalation--My_Priv_esc_tech_(Windows)--Windows--audit_priv.html">audit priv</a></li>
+</ol>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation.html">LINUX - Privilege Escalation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sherlock.html">LINUX - Sherlock</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_-etc-passwd_-deeply.html">LINUX - /etc/passwd -deeply</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_-etc-passwd_-deeply--openssl.html">openssl</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_-etc-passwd_-deeply--python.html">python</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_-etc-passwd_-deeply--perl.html">perl</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_-etc-passwd_-deeply--mkpasswd.html">mkpasswd</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_-etc-passwd_-deeply--php.html">php</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply.html">LINUX - Sudo -deeply</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Traditional_Method_to_assign_Root_Privilege.html">Traditional Method to assign Root Privilege 
+</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Default_Method_to_assign_Root_Privilege.html">Default Method to assign Root Privilege 
+</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--find_-_Allow_Root_Privilege_to_Binary_commands.html">find - Allow Root Privilege to Binary commands
+</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll.html">Allow Root Privilege to Binary Programs
+ - Spawn shelll</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--perl.html">perl</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--python.html">python</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--less.html">less</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--awk_-_spawn.html">awk - spawn</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--man.html">man</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--vi.html">vi</a></li>
+<li><a href="_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--Allow_Root_Privilege_to_Shell_Script.html"> Allow Root Privilege to Shell Script</a></li>
+<li><a href="CP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--bash_script_-_spawn.html">bash script - spawn</a></li>
+<li><a href="_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--python_script_-_spawn.html">python script - spawn</a></li>
+<li><a href="_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--c_script_-_spawn.html">c script - spawn</a></li>
+<li><a href="_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--Allow_Sudo_Right_to_other_Programs.html">Allow Sudo Right to other Programs</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--Env.html">Env</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--ftp.html">ftp</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--socat.html">socat</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Sudo_-deeply--Allow_Root_Privilege_to_Binary_Programs_-_Spawn_shelll--scp.html">scp</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable.html">LINUX - Path Variable</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method1.html">method1</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method1--1st_technique_-_echo.html">1st technique - echo</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method1--2nd_technique_-_cp.html">2nd technique - cp</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method1--3rd_technique_-_Symlink.html">3rd technique - Symlink</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--htb_zipper_-_path_variable.html">htb zipper - path variable</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method_2.html">method 2</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method_2--echo.html">echo</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method_3.html">method 3</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method_3--4th_technique_-_nano.html">4th technique - nano</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Path_Variable--method_3--5th_technique_-_vi.html">5th technique - vi</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_LD_Preload.html">LINUX - LD_Preload</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_CRON_-_Deeply.html">LINUX - CRON - Deeply</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_CRON_-_Deeply--file_overwrite.html">file overwrite</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_CRON_-_Deeply--tar_wildcard_injection.html">tar wildcard injection</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_WildCard_Exploitation.html">LINUX - WildCard Exploitation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_WildCard_Exploitation--tar_wildcard.html">tar wildcard</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_WildCard_Exploitation--tar-_sudoers.html">tar- sudoers</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_WildCard_Exploitation--tar_suid_permission.html">tar suid permission</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_deeply.html">LINUX - SUID - deeply</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_deeply--cp.html">cp</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_deeply--find.html">find</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_deeply--vim.html">vim</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_deeply--saved_script.html">saved script</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_deeply--nano.html">nano</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_NMAP.html">LINUX - SUID - NMAP</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_SUID_-_vim-tiny.html">LINUX - SUID - vim-tiny</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-writable.html">LINUX -writable</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-writable--cron.html">cron</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-CRON.html">LINUX -CRON</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-CRON--cron.html">cron</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-NFS.html">LINUX -NFS</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-NFS--2nd.html">2nd</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Automated_Script.html">LINUX - Automated Script</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Automated_Script--linenum.html">linenum</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Automated_Script--Linuxprivchecker.html">Linuxprivchecker</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Automated_Script--linuxexploitsuggester2.html">linuxexploitsuggester2</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Automated_Script--Bashark.html">Bashark</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Automated_Script--beroot.html">beroot</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability.html">Linux - Path Based vulnerability</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability--path_based.html">path based</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability--path.html">path</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability--path.html">path</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability--path.html">path</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability--path.html">path</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--Linux_-_Path_Based_vulnerability--path.html">path</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_capabilities__capability.html">LINUX - capabilities  capability</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_capabilities__capability--caoability.html">caoability</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation.html">LINUX - Binaries for escalation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--zip.html">zip</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--APT.html">APT</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--APT--Exploiting_Sudo_rights_Method_-I.html">Exploiting Sudo rights: Method -I</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--APT--Exploiting_Sudo_rights_Method-II.html">Exploiting Sudo rights: Method-II</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--APT--Exploiting_Sudo_rights__Method-III.html">Exploiting Sudo rights:  Method-III</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--APT--apt-_cron.html">apt- cron</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--wget.html">wget</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--wget--passwd_entry.html">passwd entry</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--wget_-2.html">wget -2</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--find.html">find</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--find--SUID_Lab_setups_for_Privilege_Escalation.html">SUID Lab setups for Privilege Escalation</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--cat.html">cat</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--xxd.html">xxd</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--time.html">time</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--Taskset.html">Taskset</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--git.html">git</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--cp.html">cp</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--tmux.html">tmux</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--tmux_-2.html">tmux -2</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--ed.html">ed</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--sed.html">sed</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--pip.html">pip</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--lxd.html">lxd</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--socat.html">socat</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--scp.html">scp</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--capabilities.html">capabilities</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--perl.html">perl</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--docker.html">docker</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--perl_-2.html">perl -2</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--chkrootkit.html">chkrootkit</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--tmp.py.html">tmp.py</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--monitor.sh.html">monitor.sh</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--vi.html">vi</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--systemctl.html">systemctl</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--tar.html">tar</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--id-disk.html">id-disk</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--id-games.html">id-games</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--python.html">python</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--nightmare.html">nightmare</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--crontab.html">crontab</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--tcpdump.html">tcpdump</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--strace.html">strace</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--ssh.html">ssh</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--mysql.html">mysql</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--make.html">make</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--wine.html">wine</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--2019_vulnerabilty_!root.html">2019 vulnerabilty !root</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--ftp.html">ftp</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--micro.html">micro</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--mysql.html">mysql</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--Simon.html">Simon</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--tcpdump.html">tcpdump</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--ht.html">ht</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--sls.html">sls</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--apt-get.html">apt-get</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--ed.html">ed</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Binaries_for_escalation--mawk.html">mawk</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_PE_Cheatsheet.html">LINUX - PE Cheatsheet</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--LINUX_-_Exploiting_SUDO_CVE-2019-14287.html">LINUX - Exploiting SUDO CVE-2019-14287</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right.html">ABUSING Sudo Right</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--ted1_-_apt.html">ted1 - apt</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--kfiofan1-_sql_-_awk.html">kfiofan1- sql - awk</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--Hack_the_21LTR_-_rce-_cat.html">Hack the 21LTR - rce- cat </a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--Hack_the_Skytower-_blind_sql_-_ls.html">Hack the Skytower- blind sql - ls</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--matrix1_-_restricted_shell_-_su.html">matrix1 - restricted shell - su</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--Sputnik_1_-_ed.html">Sputnik 1 - ed</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--sunset_-_ed.html">sunset - ed</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--dc2_-_git.html">dc2 - git</a></li>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--ABUSING_Sudo_Right--matrix_3.html">matrix 3</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--LINUX_-_Privilege_Escalation--My_Priv_esc_tech_(Linux).html">My Priv esc tech (Linux)</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow.html">Buffer Overflow</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF.html">BOF</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--ShellCode_of_everything.html">ShellCode of everything</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--Step_1_Fuzzing.html">Step 1 Fuzzing</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--Step2-Crash_Replication.html">Step2-Crash Replication</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--Step3-Badchar.html">Step3-Badchar</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--Step4-Exploit.html">Step4-Exploit</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--Buffer.spk.html">Buffer.spk</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--badchar.html">badchar</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--compare_Dump.sh.html">compare Dump.sh</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--mona_bad_char.html">mona bad char</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Minishare_-_Exploitation.html">Minishare - Exploitation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Minishare_-_Exploitation--shell.html">shell</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Slmail_-_Exploitation.html">Slmail - Exploitation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Slmail_-_Exploitation--shell.html">shell</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Brain_Pan_-_Exploitation.html">Brain Pan - Exploitation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Brain_Pan_-_Exploitation--shell.html">shell</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--VulnServer_-_Exploitation.html">VulnServer - Exploitation</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--VulnServer_-_Exploitation--shell.html">shell</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Steps_bof.html">Steps bof</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--monapy_Bad_char.html">monapy Bad char</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF.html">BOF</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--2.html">2</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--bof.html">bof</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--points.html">points</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--BOF--monapy-badchar.html">monapy-badchar</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Updated_Bof.html">Updated Bof</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Updated_Bof--fuzz.html">fuzz</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Updated_Bof--crash_replication.html">crash replication</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Updated_Bof--controlling_EIP.html">controlling EIP</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Updated_Bof--bad_char.html">bad char</a></li>
+<li><a href="My_OSCP_Notes--Buffer_Overflow--Updated_Bof--Final_exploit.html">Final exploit</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--Shell.html">Shell</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Shell--msfvenom.html">msfvenom</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Shell--msfvenom--msf.html">msf</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Shell--windows.html">windows</a></li>
+<li><a href="My_OSCP_Notes--Shell--shell.html">shell</a></li>
+<li><a href="My_OSCP_Notes--Shell--one_liner.html">one liner</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Shell--one_liner--php.html">php</a></li>
+<li><a href="My_OSCP_Notes--Shell--one_liner--one_liner.html">one liner</a></li>
+<li><a href="My_OSCP_Notes--Shell--one_liner--infosec_one_liner.html">infosec one liner</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Shell--powershell.html">powershell</a></li>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit.html">MSFVenom & Metasploit</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--MSFVenom-payload.html">MSFVenom-payload</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--MSFVenom-payload--Windows.html">Windows</a></li>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--MSFVenom-payload--Linux.html">Linux</a></li>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--MSFVenom-payload--Web_Payload.html">Web Payload</a></li>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--MSFVenom-payload--Binaries.html">Binaries</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--Metasploit.html">Metasploit</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--Metasploit--meterpreter.html">meterpreter</a></li>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--Metasploit--Meterpreter_shell_code.html">Meterpreter shell code</a></li>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--Metasploit--MsfVenom_Handler.html">MsfVenom Handler</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--Shell--MSFVenom_&_Metasploit--Netcat_on_windows.html">Netcat on windows</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--web.html">web</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--web--manual_sqli.html">manual sqli</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--web--manual_sqli--sqli.html">sqli</a></li>
+<li><a href="My_OSCP_Notes--web--manual_sqli--sqli2.html">sqli2</a></li>
+<li><a href="My_OSCP_Notes--web--manual_sqli--sqli3.html">sqli3</a></li>
+<li><a href="My_OSCP_Notes--web--manual_sqli--sqli4.html">sqli4</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--web--rfi.html">rfi</a></li>
+<li><a href="My_OSCP_Notes--web--wordpress.html">wordpress</a></li>
+<li><a href="My_OSCP_Notes--web--put.html">put</a></li>
+<li><a href="My_OSCP_Notes--web--lfi.html">lfi</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--web--lfi--lfi_to_rce_ssh.html">lfi to rce ssh</a></li>
+<li><a href="My_OSCP_Notes--web--lfi--infosec.html">infosec</a></li>
+<li><a href="My_OSCP_Notes--web--lfi--lfi_to_rce.html">lfi to rce</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--web--xxe.html">xxe</a></li>
+<li><a href="My_OSCP_Notes--web--command_injection.html">command injection</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--web--command_injection--infosec.html">infosec</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--web--fileuploadbypas.html">fileuploadbypas</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--password_Cracking.html">password Cracking</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--password_Cracking--zip.html">zip</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--NTLM.html">NTLM</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking---etc-shadow.html">/etc/shadow</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--kbd_keepass.html">kbd keepass</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--RSA_Decrypting.html">RSA Decrypting</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--SHA512_$6$_shadow_file.html">SHA512 $6$ shadow file</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--MD5_$1$_shadow_file.html">MD5 $1$ shadow file</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--john_RAW_MD5.html">john RAW MD5</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--MD5_Apache_webdav_file_$arp1$.html">MD5 Apache webdav file $arp1$</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--SHA1.html">SHA1</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--Wordpress_PHPASS_(hashcat).html">Wordpress PHPASS (hashcat)</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--Auth_Proxy.html">Auth Proxy</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--WordPress_(PHPASS)_windows.html">WordPress (PHPASS) windows</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--Crack_MD5_windows.html">Crack MD5 windows</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--$5$.html">$5$</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--$krb5tgs$23$_Kerberos_5_hash.html">$krb5tgs$23$ Kerberos 5 hash</a></li>
+<li><a href="My_OSCP_Notes--password_Cracking--openssl_enc'd_data_with_salted_password.html">openssl enc'd data with salted password</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--bruteforce.html">bruteforce</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--bruteforce--ssh.html">ssh</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--rdp.html">rdp</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--ftp.html">ftp</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--hashcat.html">hashcat</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--gpp-decrypt.html">gpp-decrypt</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--wp.html">wp</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--john.html">john</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--hydra.html">hydra</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--cewl_and_crunch.html">cewl and crunch</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--medusa.html">medusa</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--ncrack.html">ncrack</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--wfuzz.html">wfuzz</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--fcrackzip.html">fcrackzip</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--keepass.html">keepass</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--infosec.html">infosec</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force.html">Brute Force</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--RDP.html">RDP</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--FTP.html">FTP</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--SSH.html">SSH</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--Hydra_HTTP_Post.html">Hydra HTTP Post</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--wfuzz_HTTP_POST.html">wfuzz HTTP POST</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--smb.html">smb</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--PoP3.html">PoP3</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--DNS.html">DNS</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--MySQL.html">MySQL</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--smtp.html">smtp</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--Telnet.html">Telnet</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--drupal.html">drupal</a></li>
+<li><a href="My_OSCP_Notes--bruteforce--Brute_Force--Generate_Wordlsit.html">Generate Wordlsit</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--compiling.html">compiling</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer.html">File Transfer</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--File_Transfer--vbs.html">vbs</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--tftp.html">tftp</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--http.html">http</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--linux.html">linux</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--windows.html">windows</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--scp.html">scp</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer.html">Transfer</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows.html">Windows</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--Pwershell.html">Pwershell</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--VB_Script.html">VB Script</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--Cert_Util.html">Cert Util</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--TFTP.html">TFTP</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--SCP.html">SCP</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--netcat.html">netcat</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--Debug.html">Debug</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--bitsadmin.html">bitsadmin</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--smb.html">smb</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Windows--rdp.html">rdp</a></li>
+</ol>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux.html">Linux</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--FTP.html">FTP</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--TFTP.html">TFTP</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--SCP.html">SCP</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--netcat.html">netcat</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--curl.html">curl</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--Wget.html">Wget</a></li>
+<li><a href="My_OSCP_Notes--File_Transfer--Transfer--Linux--With_no_tool.html">With no tool</a></li>
+</ol>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--Tunneling.html">Tunneling</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Tunneling--tunneling.html">tunneling</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Tunneling--tunneling--internally_only_53_port_allowed_connecting_to_website_via_rinetd.html">internally only 53 port allowed connecting to website via rinetd </a></li>
+<li><a href="My_OSCP_Notes--Tunneling--tunneling--local_ssh_port_forwarding_(from_internally_accessing_unallowed_port).html">local ssh port forwarding (from internally accessing unallowed port)</a></li>
+<li><a href="My_OSCP_Notes--Tunneling--tunneling--remote_port_forwarding_(from_outside_with_no_access_to_certain_internal_machine).html">remote port forwarding (from outside with no access to certain internal machine)</a></li>
+<li><a href="My_OSCP_Notes--Tunneling--tunneling--SSH_Dynamic_Port_Forwarding.html">SSH Dynamic Port Forwarding  </a></li>
+<li><a href="My_OSCP_Notes--Tunneling--tunneling--advance_proxychain.html">advance proxychain</a></li>
+</ol>
+</ol>
+<li><a href="My_OSCP_Notes--Imp_Tools.html">Imp Tools</a></li>
+<li><a href="My_OSCP_Notes--Scripts.html">Scripts</a></li>
+<ol>
+<li><a href="My_OSCP_Notes--Scripts--window_add_user.html">window add user</a></li>
+<li><a href="My_OSCP_Notes--Scripts--set_suid.html">set suid</a></li>
+<li><a href="My_OSCP_Notes--Scripts--powershell_run_as.html">powershell run as</a></li>
+<li><a href="My_OSCP_Notes--Scripts--python.html">python</a></li>
+<li><a href="My_OSCP_Notes--Scripts--c.html">c</a></li>
+<li><a href="My_OSCP_Notes--Scripts--copy.html">copy</a></li>
+<li><a href="My_OSCP_Notes--Scripts--getsuid.html">getsuid</a></li>
+<li><a href="My_OSCP_Notes--Scripts--binbash.html">binbash</a></li>
+<li><a href="My_OSCP_Notes--Scripts--rev_dns.html">rev dns</a></li>
+<li><a href="My_OSCP_Notes--Scripts--setuid.html">setuid</a></li>
+<li><a href="My_OSCP_Notes--Scripts--tmp_folder_script_for_root.html">tmp folder script for root</a></li>
+<li><a href="My_OSCP_Notes--Scripts--python_cript.html">python cript</a></li>
+<li><a href="My_OSCP_Notes--Scripts--asp.html">asp</a></li>
+<li><a href="My_OSCP_Notes--Scripts---binsh.html">/binsh</a></li>
+<li><a href="My_OSCP_Notes--Scripts--root_priv.html">root priv</a></li>
+</ol>
+</ol>
+<p><a href="OSCP_Practice_(HTB_&_Vulnhub).html">OSCP Practice (HTB & Vulnhub)</a></p>
+
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux.html">HTB - linux </a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux--tartarsauce.html">tartarsauce</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux--nineveh.html">nineveh</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux--haircut.html">haircut</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux--sunday.html">sunday</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux--poison.html">poison</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_linux--swagshop.html">swagshop</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows.html">HTB - windows</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--legacy.html">legacy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--devel.html">devel</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--bastard.html">bastard</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--optimum.html">optimum</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--granny.html">granny</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--jeeves_-juicypotato.html">jeeves -juicypotato</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-_windows--chatterbox.html">chatterbox</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows.html">HTB -ippsecc windows</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--access.html">access</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--active.html">active</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--Arctic.html">Arctic</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--arkham.html">arkham</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--bastard.html">bastard</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--bastion.html">bastion</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--blue.html">blue</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--bounty.html">bounty</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--brainfuck.html">brainfuck</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--chatterbox.html">chatterbox</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--conceal_-_JP_juicy.html">conceal - JP juicy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--devel.html">devel</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--granny.html">granny</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--grandpa.html">grandpa</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--giddy_IIS_10.html">giddy IIS 10</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--jeeves.html">jeeves</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--jerry_-_tomcat_pw_crack.html">jerry - tomcat pw crack</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--json_-_JP.html">json - JP</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--node.html">node</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--kotarak.html">kotarak</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--lame.html">lame</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--legacy.html">legacy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--mantis.html">mantis</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--netmon.html">netmon</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--optimum.html">optimum</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--querier.html">querier</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--secnotes.html">secnotes</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--oracle.html">oracle</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_windows--tally_-_sqsh.html">tally - sqsh</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux.html">HTB -ippsecc linux</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--Ariekei_-_docker.html">Ariekei - docker</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--Aragog_-_xxe.html">Aragog - xxe</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--Apocalyst_-_wp.html">Apocalyst - wp</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--bank.html">bank</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--bart.html">bart</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--bashed.html">bashed</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--beep.html">beep</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--bitlab.html">bitlab</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--blocky.html">blocky</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--canape_-_db.html">canape - db</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--carrier.html">carrier</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--Celestial.html">Celestial</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--chaos.html">chaos</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--charon.html">charon</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--crimestoppers.html">crimestoppers</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--cronos.html">cronos</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--curling.html">curling</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--dab_-_wfuzz.html">dab - wfuzz</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--DevOops.html">DevOops</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--Dropzone.html">Dropzone</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--enterprise.html">enterprise</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--europa.html">europa</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--falafel.html">falafel</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--flujab.html">flujab</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--FluxCapacitor.html">FluxCapacitor</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--fortune_-_nfs.html">fortune - nfs</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--FriendZone.html">FriendZone</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--frolic_-_play.html">frolic - play</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--haircut.html">haircut</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--hawk.html">hawk</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--haystack.html">haystack</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--heist.html">heist</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--help.html">help</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--irked.html">irked</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--jarvis.html">jarvis</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--lazy.html">lazy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--luke.html">luke</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--networked.html">networked </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--nibble.html">nibble</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--nineveh.html">nineveh</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--zipper.html">zipper</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--october.html">october</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--onetwoseven.html">onetwoseven</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--oz.html">oz</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--poison.html">poison</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--popcorn.html">popcorn</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--sense.html">sense</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--shocker.html">shocker</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--sneaky.html">sneaky</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--solidstate.html">solidstate</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--Stratosphere.html">Stratosphere</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--sunday.html">sunday</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--swagshop.html">swagshop</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--tenten.html">tenten</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--valentine.html">valentine</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--waldo.html">waldo</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--wall.html">wall</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--zetta.html">zetta</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--teacher.html">teacher</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--tatarsauce.html">tatarsauce</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--HTB_-ippsecc_linux--postman.html">postman</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil.html">htbwithout msf - ranakhalil</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Bashed_(linux).html">Bashed (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Devel_(windows).html">Devel (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Lame_(linux).html">Lame (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--legacy_(windows).html">legacy (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Optimum_(windows).html">Optimum (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Arctic_(Windows).html">Arctic (Windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Shocker_(linux).html">Shocker (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Valentine_(linux).html">Valentine (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--nibble_(linux).html">nibble (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--cronos_(linux).html">cronos (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Blue_(windows).html">Blue (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Irked_(linux).html">Irked (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Friendzone_(linux).html">Friendzone (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--brainfuck_(linux).html">brainfuck (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--beep_(linux).html">beep (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--nineveh_(linux).html">nineveh (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Active_(Windows).html">Active (Windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--sense_(freebsd).html">sense (freebsd)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--solidstate_(linux).html">solidstate (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--node_(linux).html">node (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Poison_(freebsd).html">Poison (freebsd)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Sunday_(solaris).html">Sunday (solaris)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Swagshop_(linux).html">Swagshop (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Jarvis_(linux).html">Jarvis (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Networked_(linux).html">Networked (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--TartarSauce_(linux).html">TartarSauce (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--LaCasaDePapel_(linux).html">LaCasaDePapel (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Hawk_(linux)_-_drupal.html">Hawk (linux) - drupal</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--lightweight_(linux).html">lightweight (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Devoops_(linux).html">Devoops (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--falafel_(linux).html">falafel (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--kotarak_(linux).html">kotarak (linux)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--bastard_(windows).html">bastard (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--granny_(windows).html">granny (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--grandpa_(windows).html">grandpa (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--bounty_(windows)_gobuster_-_webconfig_-juicy.html">bounty (windows) gobuster - webconfig -juicy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--jerry_(windows).html">jerry (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--chatterbox_(windows).html">chatterbox (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Sillo_(windows).html">Sillo (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Conceal_(Windows).html">Conceal (Windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--Netmon_(windows).html">Netmon (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--jeeves_(windows)_jenkin.html">jeeves (windows) jenkin</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--bart_(windows).html">bart (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--tally_(windows).html">tally (windows)</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--jail.html">jail</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--safe.html">safe</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--htbwithout_msf_-_ranakhalil--bankrobber.html">bankrobber</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub.html">Vulnhub</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--Bsides_Vancouver.html">Bsides Vancouver</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--raven_1.html">raven 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--raven_2.html">raven 2 </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--acid_1.html">acid 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--sedna_-_build.html">sedna - build</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--simple_-_cutenews.html">simple - cutenews</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--jigsaw_2_-_dirsearch_-proftp.html">jigsaw 2 - dirsearch -proftp</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--violator.html">violator</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--troll_3.html">troll 3</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--pinkypalace_v2.html">pinkypalace v2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--pinkypalace_v1.html">pinkypalace v1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--digital_world.html">digital world</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--digital_world--joy.html">joy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--digital_world--bravery.html">bravery</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--digital_world--mercy.html">mercy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--digital_world--development.html">development</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--digital_world--torment.html">torment</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--skytower.html">skytower</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--IMF.html">IMF</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--troll1.html">troll1 </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--troll_2.html">troll 2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub---dev-random_sleepy.html">/dev/random sleepy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--BILLY_MADISON.html">BILLY MADISON </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--wallabys-nightmare.html">wallabys-nightmare</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--wintermute_-_mail_log_poison.html">wintermute - mail log poison</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--solidstate-_james.html">solidstate- james</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--web_developer_-_wp.html">web developer - wp</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--zico_1.html">zico 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--lin.security.html">lin.security</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--lord_of_the_root_-_mysql_udf.html">lord of the root - mysql udf</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--pwnos_2.0.html">pwnos 2.0</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--sickos.html">sickos</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--vulnos_2.html">vulnos 2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--vulnix_-_smtp_enum_-_79__-_2049_nfs_-_root_sequence.html">vulnix - smtp enum - 79  - 2049 nfs - root sequence</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--Mr._Robot_1.html">Mr. Robot 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--pwnlab_-init__-sql.html">pwnlab -init  -sql</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--stapler.html">stapler </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--firstileaks.html">firstileaks</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--kioptix_2014.html">kioptix 2014</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--kioptix_1.3.html">kioptix 1.3</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--kioptix_1.2.html">kioptix 1.2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--kioptix_1.1.html">kioptix 1.1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--kioptix_1.html">kioptix 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--metasploitable_3.html">metasploitable 3</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--metasplotiable_2.html">metasplotiable 2 </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub--metasploitable_1.html">metasploitable 1</a></li>
+</ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2.html">Vulnhub2</a></li>
+<ol>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--sunset_desk.html">sunset desk</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--me_and_my_gf_1.html">me and my gf 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--sunset_sunrise.html">sunset sunrise</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--UA_Literally_vulnerable.html">UA Literally vulnerable </a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--in_plain_sight_1.html">in plain sight 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--HA_Dhanush.html">HA: Dhanush</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--HA_Chanakya.html">HA: Chanakya</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--djinn.html">djinn</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--Jigsaw.html">Jigsaw</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--evm1.html">evm1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--mumbai_1.html">mumbai 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--gears-of-war-ep1.html">gears-of-war-ep1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--chakravyuh.html">chakravyuh</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--rudra_-_new_exploit.html">rudra - new exploit</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--ha-avengers-arsenal.html">ha-avengers-arsenal</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--ha-naruto.html">ha-naruto</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--joker_-_joomla.html">joker - joomla</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--isro.html">isro</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hackerfest.html">hackerfest</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--bossplayersctf.html">bossplayersctf</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--Misdirection.html">Misdirection</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--armour.html">armour</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--ha-wordy-_wordpress.html">ha-wordy- wordpress</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--dc8.html">dc8</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--silky.html">silky</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--sunset_dawn.html">sunset dawn</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--sunset_dawn.html">sunset dawn</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--Prime.html">Prime</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--teuchter.html">teuchter</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--violator.html">violator</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--symfonos4.html">symfonos4</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--nightfall_-_ssh.html">nightfall - ssh</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--dc-7_-_drupal.html">dc-7 - drupal</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--ai_web_2.html">ai web 2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hack_6_day.html">hack 6 day</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--digitalworld-localtorment.html">digitalworld-localtorment</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hack-the-gemini-inc2.html">hack-the-gemini-inc2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--dev-random-k2-vm-boot2root.html">dev-random-k2-vm-boot2root</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--wintermute_-mail.html">wintermute -mail</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hack_the_gemini.html">hack the gemini</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--ai_web_1.html">ai web 1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hack-the-lin-security_-_mast.html">hack-the-lin-security - mast</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--oracle_padding.html">oracle padding</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--nezuko-1-vulnhub.html">nezuko-1-vulnhub</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--minu-v2.html">minu-v2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--digitalworld-local-joy.html">digitalworld-local-joy</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--symfonos2.html">symfonos2</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--Matrix-3.html">Matrix-3</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--pumpkinraising.html">pumpkinraising</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--symfonos1.html">symfonos1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--happycorp1_-_nfs.html">happycorp1 - nfs</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--W1R3S.inc_VM.html">W1R3S.inc VM</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hack_the_de_ice.html">hack the de ice</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--hack-kevgir.html">hack-kevgir</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--vulnos-1.html"> vulnos-1</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--dina-101_-_pllaysms.html">dina-101 - pllaysms</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--dexter.html">dexter</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--pwnlab.html">pwnlab</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--sputnik-1_splunk.html">sputnik-1 splunk</a></li>
+<li><a href="OSCP_Practice_(HTB_&_Vulnhub)--Vulnhub2--dc1.html">dc1</a></li>
+</ol>
+</ol>
+<p><a href="burp_setup.html">burp setup</a></p>
+
+</div>
+<div class="page"><h1><b><u>micro</u></b></h1>cat /etc/passwd | /usr/bin/micro<br /><br /><br /><br />openssl passwd -1 -salt user3 pass123</div></div>
+</body></html>
